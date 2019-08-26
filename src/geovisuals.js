@@ -9,9 +9,11 @@ import '../node_modules/mapbox-gl/dist/mapbox-gl.css';
 import * as utils from './components/utils';
 import * as map from './components/map';
 
+export var geovisuals = geovisuals || {};
+geovisuals.map = undefined;
 
 window.onload = function () {
     utils.Set_fontawesome();
-    map.Initialize_mapboxgl('map');
+    geovisuals.map = map.Create_map('map');
     return;
 }

@@ -32,7 +32,7 @@ module.exports = {
                     "entryPoints": [
                         {
                             "html": "./src/views/index.html",
-                            "js": "./src/renderer.js",
+                            "js": "./src/geovisuals.js",
                             "name": "main_window"
                         }
                     ]

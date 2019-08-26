@@ -1,1 +1,1 @@
-export { default as Initialize_mapboxgl } from './init';
+export { default as Create_map } from './init';
