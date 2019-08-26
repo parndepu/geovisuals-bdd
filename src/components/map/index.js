@@ -1,0 +1,1 @@
+export { default as Initialize_mapboxgl } from './init';

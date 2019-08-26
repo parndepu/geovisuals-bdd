@@ -6,10 +6,12 @@ import './styles/index.css';
 import '../node_modules/mapbox-gl/dist/mapbox-gl.css';
 
 // Components
-import * as Utils from './components/utils';
+import * as utils from './components/utils';
+import * as map from './components/map';
 
 
 window.onload = function () {
-    Utils.Set_fontawesome();
+    utils.Set_fontawesome();
+    map.Initialize_mapboxgl('map');
     return;
 }
