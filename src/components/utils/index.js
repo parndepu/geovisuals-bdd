@@ -1,0 +1,1 @@
+export { default as Set_fontawesome } from './fontawesome';
