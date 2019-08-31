@@ -32,7 +32,10 @@ function Create_window()
         width: 800,
         height: 600,
         minWidth: 800,
-        minHeight: 600
+        minHeight: 600,
+        webPreferences: {
+            nodeIntegration: true
+        }
     });
 
     // Load index.html page
