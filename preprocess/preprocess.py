@@ -57,5 +57,6 @@ if __name__ == '__main__':
 
     # Read 100k info directory
     read_directory(bdd_train_path, collection_train)
+    #read_directory(bdd_val_path, collection_val)
     # Close mongodb client
     client.close()

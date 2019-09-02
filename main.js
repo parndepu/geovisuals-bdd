@@ -38,8 +38,8 @@ function Create_window()
         }
     });
 
-    // Load index.html page
-    main_window.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
+    // Load index.html of the app
+    main_window.loadURL(path.join('file://',__dirname, 'src', 'views', 'index.html'));
     // Disable menu
     main_window.setMenu(null);
 
@@ -67,7 +67,7 @@ function Enable_devTools()
     }
 
     // Debug: 
-    main_window.webContents.openDevTools();
+    // main_window.webContents.openDevTools();
 }
 
 // Initialize mongod and create browser window
@@ -83,7 +83,7 @@ app.on('window-all-closed', function () {
 // Activate on MacOS
 app.on('activate', function () {
     // Recreate window in the app when dock icon is clicked
-    if (window == null) {
+    if (main_window == null) {
         Initialize_mongod();
     }
 });
